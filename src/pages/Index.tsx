@@ -110,9 +110,14 @@ const Index = () => {
     <div className="flex min-h-screen flex-col bg-background">
       {/* Header with Logo */}
       <header className="fixed left-0 right-0 top-0 z-10 border-b border-border bg-background/80 backdrop-blur-sm">
-        <div className="container flex h-16 items-center px-4">
-          <img src={logo} alt="QuantumBot" className="h-10 w-10" />
-          <span className="ml-3 text-xl font-bold text-foreground">QuantumBot</span>
+        <div className="container flex h-16 items-center justify-between px-4">
+          <div className="flex items-center">
+            <img src={logo} alt="QuantumBot" className="h-10 w-10" />
+            <span className="ml-3 text-xl font-bold text-foreground">QuantumBot</span>
+          </div>
+          <Button variant="outline" onClick={() => window.location.href = "/admin"}>
+            Admin Portal
+          </Button>
         </div>
       </header>
 
